@@ -1,0 +1,6 @@
+module load anaconda/3/4.3.1
+module load hdf5-mpi
+module load mpi4py
+
+#Run on 8 MPI processes:
+srun -n 8 python3.6 mpi_test.py beta0p5_eps0p4/electrons-tracks-p3.h5 p3
